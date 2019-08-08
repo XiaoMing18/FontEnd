@@ -147,17 +147,11 @@ a &lt; b &gt; c
 
 
 
+<br><br><br>
 
 
-#  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 第五章，内联框架
+# &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 第五章:内联框架
 
-#####使用内联框架可以引入一个外部的页面    <br>
-
-#####使用iframe来创建一个内联框架  <br>
-
-#####  属性:        <br>
-
-#####          src:指向一个外部页面的路径，可以使用相对路径
 
 
 
