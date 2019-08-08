@@ -1,6 +1,6 @@
 # FontEnd
 ## 前端相关知识
-#                          第一章，               常用标签
+#    &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 第一章,常用标签
 
 
 ## 标题标签    
@@ -54,7 +54,7 @@ hr标签可以在页面中生成一条水平线，自结束
 
 
 
-# 第二章，实体(转义字符)
+# &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 第二章，实体(转义字符)
 
 在html中，一些如<>中特殊字符是不能直接使用的需要使用一些特殊的符号来表示这些特殊字符，这些特殊符号我们称为实体(转义字符)
 
@@ -78,7 +78,7 @@ a &lt; b &gt; c
 
 
 
-# 第三章，meta标签
+# &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 第三章，meta标签
 
 
 
@@ -130,6 +130,20 @@ a &lt; b &gt; c
     <meta http-equiv="refresh" content="5;url=https://blog.csdn.net/qq_35978855/article/details/98761692"/>
 ```
 
+
+<br/>
+<br/>
+<br/>
+
+
+
+# &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 第四章，XHtml语法规范
+
+#### 1,html中不区分大小写，但是我们一般都使用小写
+
+### 2,html中注释一般不能嵌套
+
+### 3,html中标签必须结构完整，要么成对出现，要么自结束标签
 
 
 
