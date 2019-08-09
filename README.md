@@ -169,6 +169,17 @@ a &lt; b &gt; c
 
 # CSS
 
+#  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第一章,CSS简介
+
+## 内联样式(不推荐使用)
+可以将css样式编写到元素的style属性当中    将样式直接编写到style属性中，这种样式我们称为内联样式    内联样式只对当前的元素中的内容起作用，内联样式不方便复用    内联样式属于结构与表现耦合，不方便后期的维护，不推荐使用的
+
+
+
+
+
+## 样式选择器(强烈推荐)
+也可以将CSS样式编写到head中的style标签里将样式表编写的style标签中，然后通过css选择器选中指定元素    然后可以同时为这些元素一起设置样式，这样可以使样式进一步的复用将样式表编写到style标签中，也可以使表现和结构进一步分离，它也是我们推荐的使用方式
 
 
 
