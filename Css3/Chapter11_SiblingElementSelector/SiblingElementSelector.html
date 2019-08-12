@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<!--兄弟元素选择器-->
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<style type="text/css">
+			/**
+			 * 为span后的一个p元素设置背景色荧光绿
+			   后一个兄弟选择器
+			   作用:可以选择一个元素后紧挨着指定的兄弟元素
+			   语法:前一个 + 后一个
+			 */
+			span + p {
+				background-color: greenyellow;
+			}
+			
+			/**
+			 * 选中后边的所有兄弟元素
+			   前一个 ~ 后边所有
+			 */
+			span ~ p{
+				background-color: skyblue;
+			}
+			/**
+			 * 为所有p元素设置一个背景颜色荧光绿，除了class值为hello的
+			   否定伪类:
+			          可以从已选的元素中剔除某些元素
+		       语法:
+			       :not(选择器)
+			 */
+			p:not(.hello){
+				background-color: #800080;
+			}
+		</style>
+	</head>
+	<body>
+		<p>这是一个p标签</p>
+		<p class="hello">这是一个p标签</p>
+		<span>这是一个span标签</span>
+		<p>这是一个p标签</p>
+		<p>这是一个p标签</p>
+	</body>
+</html>
