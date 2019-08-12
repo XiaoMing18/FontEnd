@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<!--Attribute selector:属性选择器-->
+	<head>
+		<!--
+		title属性，这个属性可以给任何标签指定
+		     当鼠标移入到元素上时，元素中的title属性的值将会作为提示文字显示			 
+		-->
+			
+		<meta charset="utf-8">
+		<title></title>
+		<!--
+		为所有具有title属性的p元素设置一个背景颜色天蓝色
+		属性选择器
+		-可以根据元素中属性或属性值来选取指定元素
+		-语法:
+		    -[属性名] 选取含有指定属性的元素
+			-[属性名="属性值"] 选取含有指定属性值的元素
+			-[属性名^="属性值"] 选取属性值以指定内容开头的元素
+			-[属性名$="属性值"] 选取属性值以指定内容结尾的元素
+			-[属性名*="属性值"] 选取属性值含有指定内容的元素
+		
+		-为title属性值为hello的元素设置一个背景色荧光绿
+		-为title属性值以ab开头的元素设置一个背景色红色
+		-为title属性值以c结尾的元素设置一个背景色紫色
+		-为title属性值含有c的元素设置一个字体白色
+		-->
+		<style type="text/css">
+			p[title]
+			{
+				background-color: skyblue;
+			}
+			
+			p[title=hello]{
+				background-color: greenyellow;
+			}
+			
+			p[title^="ab"]{
+				background-color: red;
+			}
+			
+			p[title$="c"]{
+				background-color: #800080;
+			}
+			
+			p[title*="c"]{
+				color:white;
+			}
+		</style>
+	</head>
+	<body>
+		<p title="这是title标签的提示文字">这是一段测试文字</p>
+		<p >这是一段测试文字</p>
+		<p >这是一段测试文字</p>
+		<p title="hello">这是一段测试文字</p>
+		<p title="abcdefg">这是一个title属性以ab开头的属性值</p>
+		<p title="dec">这是一个title属性以c结尾的属性值</p>
+	</body>
+</html>
