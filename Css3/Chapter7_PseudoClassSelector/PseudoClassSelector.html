@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+	<!--
+Pseudo-class selector:伪类选择器-->
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			Pseudo-class selector:伪类选择器
+			伪类专门用来表示元素的一种特殊状态
+			比如:访问过的超链接，普通超链接，获取焦点的文本框
+			使用场景:当我们需要为这些特殊状态的元素设置样式时使用 	
+			*/
+		   
+		   /*
+		   为没访问过的链接设置一个样式为蓝色
+		   ： link
+		      -表示普通的连接(没访问过的链接)
+		   */
+		 a:link
+		 {
+			 color: #7FFFD4;
+		 }
+		 
+		 /*
+		 
+		 为访问过的链接设置一个颜色为紫色
+		 : visited
+		   - 表示访问过的链接
+		   
+		   浏览器是通过历史记录来判断一个链接是否访问过，由于涉及到用户隐私问题，所有使用visited伪类只能设置字体的颜色
+		 */
+		a:visited{
+			color: #800080;
+		}
+		
+		
+		/*
+		hover鼠标移入的状态
+		*/
+		a:hover{
+			color: skyblue;
+		}
+		 
+		 
+		
+		 /*
+		 active超链接被点击后的状态
+		 */
+		 a:active{
+			 color: greenyellow; 
+		 }
+		 
+		
+		 
+		 /*
+		 hover和active也可以为其他元素设置样式,比如p标签
+		 */
+		  p:hover{
+		 			 background-color: red;
+		 }
+		 
+		  p:active{
+		 			 color: white;
+		 }
+		 
+		 /**
+		  * 文本框获取焦点以后，修改背景为天蓝色
+		  */
+		 input:focus{
+			 background-color: #7FFFD4;
+		 }
+		 
+		 /*
+		 为p标签中选中的文字设置样式
+		 */
+		p::selection{
+			color: purple;
+		}
+		</style>
+	</head>
+	<body>
+		<a class="a1" href="www.baidu.com">访问过的连接,鼠标移到上面会变成天蓝色,超链接被点击会变成荧光绿</a>
+		<br>
+		<a class="a2" href="www.baidu.com1">未访问的连接,鼠标移到上面会变成天蓝色,超链接被点击会变成荧光绿</a>
+	    <p>这是一个段落测试,同时其中的文字有着选中会变成紫色</p>
+		<!--使用input创建一个文本框-->
+		<input type="text"/>
+	</body>
+</html>
