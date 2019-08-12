@@ -270,6 +270,8 @@ css语法:   <br>
 <br>
 <br>
 <br>
+
+
 #  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第五章,Css常用选择器
 
 #### CssCommonSelector:Css常用选择器
@@ -350,7 +352,9 @@ id选择器
 
 <br>
 <br>
-<br/>
+<br>
+
+
 #  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第六章,子元素和后代元素
 
 ```
@@ -365,7 +369,9 @@ id选择器
 
 <br>
 <br>
-<br/>
+<br>
+
+
 #
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第七章:伪类选择器
 
@@ -432,7 +438,9 @@ selection:为p标签中选中的文字设置样式
 
 <br>
 <br>
-<br/>
+<br>
+
+
 #
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第八章:伪元素
 
@@ -547,7 +555,9 @@ title属性，这个属性可以给任何标签指定
 
 <br>
 <br>
-<br/>
+<br>
+
+
 #                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第十章:子元素的伪类
 
 ### Pseudo-classes of child elements:子元素的伪类
@@ -585,7 +595,9 @@ first-child-type
 
 <br>
 <br>
-<br/>
+<br>
+
+
 #
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第十一章:兄弟元素选择器和否定伪类
 
