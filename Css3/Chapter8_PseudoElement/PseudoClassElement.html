@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<!--Pseudo  element:伪元素-->
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+		/**
+		 * 使用伪元素表示元素中的一些特殊位置
+		 */
+		
+		/**
+		 * 为p中第一个字符设置一个特殊样式
+		 */
+		p:first-letter{
+			color: red;
+		}
+		/**
+		 * 为p标签第一行设置伪元素颜色为天蓝
+		 */
+		p:first-line{
+			color: skyblue;
+		}
+		/**
+		 * before表示元素最前面的部分
+		 一般before都要将结合content这个样式使用
+		 通过content可以向before或者after特殊位置添加一些样式
+		 
+		 after表示元素最前面的部分
+		 */
+		p:before{
+			content: "表示这些会出现在最前面";
+		}
+		p:after{
+			content: 这些将会出现在最后面;
+		}
+		</style>
+	</head>
+	<body>
+		<p>这是一个p元素<br>
+		,<br>
+		将它第一个字符设置为
+		<br>伪元素颜色为红</p>
+		
+	</body>
+</html>
