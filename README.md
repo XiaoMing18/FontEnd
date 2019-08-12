@@ -348,3 +348,275 @@ id选择器
 
 
 
+<br>
+<br>
+<br/>
+#  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第六章,子元素和后代元素
+
+```
+元素之间的关系
+		父元素:直接包含子元素的元素
+		子元素:直接被父元素包含的元素
+		祖先元素:直接或间接包含后代元素的元素，父元素也是祖先元素
+		后代元素:直接或间接被祖先元素包含的元素，子元素也是后代元素
+		兄弟元素:拥有相同父元素的元素叫做兄弟元素
+		
+```
+
+<br>
+<br>
+<br/>
+#        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第七章:伪类选择器
+
+
+
+###Pseudo-class selector:伪类选择器
+			伪类专门用来表示元素的一种特殊状态
+			比如:访问过的超链接，普通超链接，获取焦点的文本框
+			使用场景:当我们需要为这些特殊状态的元素设置样式时使用
+
+
+
+
+```
+  link
+  为没访问过的链接设置一个样式为蓝色
+		   ： link
+		      -表示普通的连接(没访问过的链接)
+```
+
+
+
+
+
+
+
+
+		为访问过的链接设置一个颜色为紫色
+		 : visited
+		   - 表示访问过的链接浏览器是通过历史记录来判断一个链接是否访问过，由于涉及到用户隐私问题，所有使用visited伪类只能设置字体的颜色	  
+
+
+
+
+```
+hover鼠标移入的状态
+```
+
+
+
+
+
+```
+active超链接被点击后的状态
+```
+
+
+
+```
+ hover和active也可以为其他元素设置样式,比如p标签
+```
+
+
+
+```
+focus:文本框获取焦点以后，修改背景为天蓝色
+```
+
+
+
+```
+selection:为p标签中选中的文字设置样式
+```
+
+<br>
+<br>
+<br/>
+#      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第八章:伪元素
+
+### Pseudo  element:伪元素
+
+
+
+```
+使用伪元素表示元素中的一些特殊位置
+```
+
+
+
+```
+first-letter:
+为第一个字符设置一个特殊样式
+```
+
+
+
+```
+first-line:
+为第一行设置伪元素颜色为天蓝
+```
+
+
+
+```
+before:
+before表示元素最前面的部分
+一般before都要将结合content这个样式使用
+通过content可以向before特殊位置添加一些样式
+```
+
+
+
+```
+after:
+after表示元素最前面的部分
+一般after都要将结合content这个样式使用
+通过content可以向after特殊位置添加一些样式
+```
+
+<br>
+<br>
+<br/>
+# &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第九章:属性选择器
+
+### Attribute selector:属性选择器
+
+
+
+```
+title属性，这个属性可以给任何标签指定
+	当鼠标移入到元素上时，元素中的title属性的值将会作为提示文字显示	
+```
+
+
+
+```
+为所有具有title属性的p元素设置一个背景颜色天蓝色
+		属性选择器
+		-可以根据元素中属性或属性值来选取指定元素
+		-语法:
+		    -[属性名] 选取含有指定属性的元素
+			-[属性名="属性值"] 选取含有指定属性值的元素
+			-[属性名^="属性值"] 选取属性值以指定内容开头的元素
+			-[属性名$="属性值"] 选取属性值以指定内容结尾的元素
+			-[属性名*="属性值"] 选取属性值含有指定内容的元素
+		
+		-为title属性值为hello的元素设置一个背景色荧光绿
+		-为title属性值以ab开头的元素设置一个背景色红色
+		-为title属性值以c结尾的元素设置一个背景色紫色
+		-为title属性值含有c的元素设置一个字体白色
+```
+
+例子:
+
+```html
+<style type="text/css">
+			p[title]
+			{
+				background-color: skyblue;
+			}
+			
+			p[title=hello]{
+				background-color: greenyellow;
+			}
+			
+			p[title^="ab"]{
+				background-color: red;
+			}
+			
+			p[title$="c"]{
+				background-color: #800080;
+			}
+			
+			p[title*="c"]{
+				color:white;
+			}
+		</style>
+<body>
+		<p title="这是title标签的提示文字">这是一段测试文字</p>
+		<p >这是一段测试文字</p>
+		<p >这是一段测试文字</p>
+		<p title="hello">这是一段测试文字</p>
+		<p title="abcdefg">这是一个title属性以ab开头的属性值</p>
+		<p title="dec">这是一个title属性以c结尾的属性值</p>
+	</body>
+```
+
+<br>
+<br>
+<br/>
+#                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第十章:子元素的伪类
+
+### Pseudo-classes of child elements:子元素的伪类
+
+
+
+```
+为第一个元素设置一个背景色
+			   first-child:选中第一个子元素
+			   last-child:选中最后一个子元素
+```
+
+
+
+```
+nth-child 可以选中任意位置的子元素
+						  -该选择器后边可以指定一个参数，指定要选中第几个子元素
+						  -even:表示偶数
+						  -odd:表示奇数
+```
+
+
+
+
+
+```
+first-child-type
+			   last-child-type
+			   nth-chile-type
+			   和first-child,last-child,nth-child用法一样
+			   只不过child是在所有子元素中排列（大排行，在所有子元素之中）
+			   而type是在当前类型的子元素中排列（小排行，在当前类型子元素中排行）
+```
+
+
+<br>
+<br>
+<br/>
+#  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第十一章:兄弟元素选择器和否定伪类
+
+### Sibling Element Selector：兄弟元素选择器
+
+```
+为span后的一个p元素设置背景色荧光绿
+			   后一个兄弟选择器
+			   作用:可以选择一个元素后紧挨着指定的兄弟元素
+			   语法:前一个 + 后一个
+			   
+			   
+选中后边的所有兄弟元素
+前一个 ~ 后边所有
+```
+
+
+
+```
+为所有p元素设置一个背景颜色荧光绿，除了class值为hello的
+			   否定伪类:
+			          可以从已选的元素中剔除某些元素
+		       语法:
+			       :not(选择器)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
