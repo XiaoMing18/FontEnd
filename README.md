@@ -167,6 +167,301 @@ a &lt; b &gt; c
 <br>
 <br>
 
+
+# &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 第六章:文本标签
+
+```
+em和strong
+		   -这两个标签都表示一个强调的内容
+		        em主要表示语气上的强调,em浏览器中默认斜体显示
+				strong表示强调的内容比em更强烈.默认显示粗体
+```
+
+例子:
+
+```html
+<p>
+			这几天都<em>挺热的</em>
+</p>
+		<p>
+			<strong>注意:如果你不好好练习的话你就学不会</strong>
+	    </p>
+```
+
+
+
+```
+i标签里的内容会以斜体显示
+b标签里的内容会以加粗显示
+```
+
+例子:
+
+```html
+<p>
+			<i>
+				这是i标签中的内容
+			</i>
+			<b>这是b标签中的内容</b>
+</p>
+```
+
+
+
+```
+small标签中的内容要比它父元素的文字小一些,表示细则一些的内容
+		比如:合同中的小字,网站的版权声明
+```
+例子
+
+```html
+<p>
+			我是p标签中的内容
+			<small>我是small标签中的内容</small>
+</p>
+```
+
+
+
+```
+网页中所有加书名号的内容都可以使用cite标签,表示参考内容
+		比如:书名，电影名.....
+```
+
+例子:
+
+```html
+<p>
+			<cite>论语</cite>是一本挺好的数
+</p>
+```
+
+
+
+```
+q标签表示一个短的引用(行内引用)
+		q标签引用的内容，默认加上""
+		blockquote标签表示一个长引用（块级引用），独占一行
+```
+
+例子:
+
+```html
+<p>
+			子曰:<q>学而时习之，不亦说乎</q>
+</p>
+<div>
+			子曰:
+			<blockquote>
+				连接
+		    </blockquote> 
+</div>
+```
+
+
+
+```
+sup标签设置一个上标
+```
+
+例子:
+
+```html
+<p>2 <sup>2</sup></p>
+<p>人名 <sup><a href="#">[1]</a></sup></p>
+```
+
+
+
+```
+sub标签用来表示一个下标
+```
+
+例子:
+
+```html
+<p>H<sub>2</sub>O</p>
+```
+
+
+
+```
+用del标签表示一个删除的内容
+del标签中的内容会自动添加一个删除线
+```
+
+例子:
+
+```html
+<p> 
+<del>21.5</del>
+</p>
+<p>17.5</p>
+```
+
+
+
+```
+表示一个插入的内容
+ins中的内容会自动添加下划线
+```
+
+例子:
+
+```html
+<p>测试一下<ins>添加</ins>效果</p>
+```
+
+
+
+```
+页面中直接写代码
+pre是一个预格式标签，会自动保留格式
+```
+
+
+
+例子:
+
+```html
+<pre>
+	<code>
+		window.onload =  function(){
+			alter("test");
+		}	
+	</code>
+</pre>
+```
+<br>
+<br>
+
+
+# &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;第七章:无序列表和有序列表定义列表
+
+### ordered list:有序列表
+
+### unordered list:无序列表
+
+### definition list:定义列表
+
+
+
+```
+列表相当于超市购物的购物清单
+		    在HTML中也可以创建列表，在网页中我们一共有三种列表
+			1,无序列表
+			2,有序列表
+			3,定义列表
+```
+
+
+
+```
+无序列表
+		   -使用ul标签来创建一个无序列表
+		       -使用li在ul中创建一个一个的列表项
+			       -一个li就是一个列表项
+					    通过type属性可以修改无序列表的项目符号,因为在不同浏览器显示效果不一样，因此一般不使用
+```
+
+例子
+
+```html
+<ul>
+			<li>这是一个列表</li>
+			<li>这是两个列表</li>
+			<li>这是三个列表</li>
+			<li>这是四个列表</li>
+</ul>
+```
+
+
+
+```
+有序列表和无序列表类似，用ol表示
+		有序列表使用有序列表的序号作为项目符号
+		type属性可以指定序号类型
+		    默认值:1,默认值,使用阿拉伯数字
+			      a/A采用小大写字母作为序号
+				  i/I采用小大写罗马数字作为符号
+```
+
+例子:
+
+```html
+<ol type="i">
+			<li>html:结构</li>
+			<li>Css:表现</li>
+			<li>javascript:行为</li>
+</ol>
+```
+
+
+
+```
+列表之间可以相互嵌套，
+		可以在一个无序列表中嵌套一个有序列表也可以在一个有序列表中嵌套一个无序列表
+```
+
+例子:
+
+```html
+<p>菜谱</p>
+		<ul>
+			鱼香肉丝
+			<ol>
+				<li>竹笋</li>
+				<li>猪肉</li>
+				<li>葱姜蒜</li>
+			</ol>
+			
+		</ul>
+		<ul>
+			宫保鸡丁
+			<ol>
+				<li>鸡肉</li>
+				<li>黄瓜</li>
+				<li>玉米粒</li>
+			</ol>
+		</ul>
+		<ul>
+			红烧肉
+			<ol>
+				<li>猪肉</li>
+				<li>酱油</li>
+				<li>葱姜蒜</li>
+			</ol>
+		</ul>
+		<ul>
+			油焖大虾
+		</ul>
+```
+
+
+
+```
+定义列表用来对一些词汇或内容进行定义
+		使用dl来创建一个定义列表
+		       dl中有两个子标签:
+			      dt:被定义的内容
+				  dd:对被定义内容的描述
+```
+
+例子:
+
+```html
+<dl>
+			<dt>html</dt>
+			<dd>html表示的是网页结构</dd>
+</dl>
+```
+
+
+
+
+
+
+
 # CSS
 
 #  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第一章,CSS简介
@@ -270,6 +565,8 @@ css语法:   <br>
 <br>
 <br>
 <br>
+
+
 #  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第五章,Css常用选择器
 
 #### CssCommonSelector:Css常用选择器
@@ -350,7 +647,9 @@ id选择器
 
 <br>
 <br>
-<br/>
+<br>
+
+
 #  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第六章,子元素和后代元素
 
 ```
@@ -365,9 +664,10 @@ id选择器
 
 <br>
 <br>
-<br/>
-#
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第七章:伪类选择器
+<br>
+
+
+#  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第七章:伪类选择器
 
 
 
@@ -432,9 +732,10 @@ selection:为p标签中选中的文字设置样式
 
 <br>
 <br>
-<br/>
-#
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第八章:伪元素
+<br>
+
+
+#  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第八章:伪元素
 
 ### Pseudo  element:伪元素
 
@@ -479,8 +780,9 @@ after表示元素最前面的部分
 <br>
 <br>
 <br/>
-#
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第九章:属性选择器
+
+
+#  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第九章:属性选择器
 
 ### Attribute selector:属性选择器
 
@@ -547,7 +849,9 @@ title属性，这个属性可以给任何标签指定
 
 <br>
 <br>
-<br/>
+<br>
+
+
 #                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第十章:子元素的伪类
 
 ### Pseudo-classes of child elements:子元素的伪类
@@ -585,9 +889,10 @@ first-child-type
 
 <br>
 <br>
-<br/>
-#
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第十一章:兄弟元素选择器和否定伪类
+<br>
+
+
+#                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第十一章:兄弟元素选择器和否定伪类
 
 ### Sibling Element Selector：兄弟元素选择器
 
