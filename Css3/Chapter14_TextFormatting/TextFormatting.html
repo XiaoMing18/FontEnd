@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+Text formatting:文本格式化
+Line Height:行高
+-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/**
+			 * 长度单位
+			       px:像素
+				   %:百分比（一般用在自适应网页）
+				   em:相当于当前元素字体大小
+				      1em = 1 font-size
+				     
+			 */
+			.box{
+				height: 200px;
+				width: 200px;
+				background-color: greenyellow;
+			}
+			.box1{
+				font-size: 100px;				
+				height: 50%;
+				width: 2em;
+				background-color: skyblue;				
+			}
+			/**
+			 * 设置字体颜色,使用color来设置文字颜色
+			   设置文字大小,使用20px font-size来设置文字大小
+			          font-size设置的并不是文字本身的大小,
+					  在页面中每个字都处于·一个看不见的框中,
+					  我们设置font-size实际设置的是框的大小
+			   通过font-family设置文字字体	  
+			 */
+			.hello{
+				color: #ADFF2F;
+				font-size: 20px;
+				font-family: "blackadder itc";
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="box1">			
+			</div>
+		</div>
+		<p class="hello">这是一个测试字体颜色和大小</p>
+		
+	</body>
+</html>
