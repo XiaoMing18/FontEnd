@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--Style inheritance:样式继承-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/**
+			 * 继承:儿子可以继承父亲的遗产，同样在CSS中祖先元素样式也可以被后代元素所继承
+			   利用继承可以讲一些基本样式设置给祖先元素，这样所有的后代元素将会自动继承这些祖先元素样式
+			   但不是所有元素都会被子元素继承。例如:背景相关的不会被继承
+			 */
+		</style>
+	</head>
+	<body>
+		<div style="background-color: greenyellow;">
+			
+		
+		<p style="font-size: 30px;">
+			这是一段p标签
+			<span>
+				这是p标签当中的一段文字
+			</span>
+	    </p>
+		</div>
+		
+		<span>这是p标签外的span标签</span>
+		
+	</body>
+</html>
