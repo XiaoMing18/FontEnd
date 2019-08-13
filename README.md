@@ -167,6 +167,174 @@ a &lt; b &gt; c
 <br>
 <br>
 
+
+# &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 第六章:文本标签
+
+```
+em和strong
+		   -这两个标签都表示一个强调的内容
+		        em主要表示语气上的强调,em浏览器中默认斜体显示
+				strong表示强调的内容比em更强烈.默认显示粗体
+```
+
+例子:
+
+```html
+<p>
+			这几天都<em>挺热的</em>
+</p>
+		<p>
+			<strong>注意:如果你不好好练习的话你就学不会</strong>
+	    </p>
+```
+
+
+
+```
+i标签里的内容会以斜体显示
+b标签里的内容会以加粗显示
+```
+
+例子:
+
+```html
+<p>
+			<i>
+				这是i标签中的内容
+			</i>
+			<b>这是b标签中的内容</b>
+</p>
+```
+
+
+
+```
+small标签中的内容要比它父元素的文字小一些,表示细则一些的内容
+		比如:合同中的小字,网站的版权声明
+```
+例子
+
+```html
+<p>
+			我是p标签中的内容
+			<small>我是small标签中的内容</small>
+</p>
+```
+
+
+
+```
+网页中所有加书名号的内容都可以使用cite标签,表示参考内容
+		比如:书名，电影名.....
+```
+
+例子:
+
+```html
+<p>
+			<cite>论语</cite>是一本挺好的数
+</p>
+```
+
+
+
+```
+q标签表示一个短的引用(行内引用)
+		q标签引用的内容，默认加上""
+		blockquote标签表示一个长引用（块级引用），独占一行
+```
+
+例子:
+
+```html
+<p>
+			子曰:<q>学而时习之，不亦说乎</q>
+</p>
+<div>
+			子曰:
+			<blockquote>
+				连接
+		    </blockquote> 
+</div>
+```
+
+
+
+```
+sup标签设置一个上标
+```
+
+例子:
+
+```html
+<p>2 <sup>2</sup></p>
+<p>人名 <sup><a href="#">[1]</a></sup></p>
+```
+
+
+
+```
+sub标签用来表示一个下标
+```
+
+例子:
+
+```html
+<p>H<sub>2</sub>O</p>
+```
+
+
+
+```
+用del标签表示一个删除的内容
+del标签中的内容会自动添加一个删除线
+```
+
+例子:
+
+```html
+<p> 
+<del>21.5</del>
+</p>
+<p>17.5</p>
+```
+
+
+
+```
+表示一个插入的内容
+ins中的内容会自动添加下划线
+```
+
+例子:
+
+```html
+<p>测试一下<ins>添加</ins>效果</p>
+```
+
+
+
+```
+页面中直接写代码
+pre是一个预格式标签，会自动保留格式
+```
+
+
+
+例子:
+
+```html
+<pre>
+	<code>
+		window.onload =  function(){
+			alter("test");
+		}	
+	</code>
+</pre>
+```
+
+
+
 # CSS
 
 #  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第一章,CSS简介
