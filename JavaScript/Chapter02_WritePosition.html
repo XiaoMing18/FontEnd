@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--WritePosition:编写位置-->
+<!--js代码都是一行一行往下执行的-->
+<head>
+    <meta charset="UTF-8">
+    <title>js代码编写的位置</title>
+   <!--可以将js代码写到一个外部js文件然后通过script标签引入，重要-->
+
+  <script type="text/javascript" src="js/chapter02_%20WritePosition.js"></script>
+
+    <!--Script标签一旦引入外部，就不能再编写代码了，即使编写了浏览器也会忽略，如果需要可以创建一个
+    新的script标签用于编写内部代码-->
+    <script type="text/javascript">
+        alert("这是内部的js代码");
+    </script>
+    <!--可以将js代码写到script标签中，重要-->
+<!--    <script type="text/javascript">-->
+<!--        alert("这是script标签中的代码");-->
+<!--    </script>-->
+</head>
+<body>
+<!--
+可以将js代码编写到标签的onclick属性中
+当我们点击按钮时js代码才会执行
+虽然可以写在属性中，但结构和行为耦合，不方便维护，不推荐使用
+-->
+<button onclick="alert('这里可以测试点击效果');">
+    点击
+</button>
+
+<!--可以将js代码编写到超链接href属性中，不重要-->
+<a href="javascript:alert('测试href属性')">这是个超链接，你点一下</a>
+</body>
+</html>
