@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--AttributeNameAndAttributeValue:属性名和属性值-->
+<head>
+    <meta charset="UTF-8">
+    <title>属性名和属性值</title>
+    <script type="text/javascript">
+        var obj = new Object();
+
+        /**
+         * 向对象中添加属性
+         *      -对象的属性名不强制要求遵守标识符的规范
+         *
+         */
+        obj.name = "huangchen";
+        console.log(obj.name);
+
+        /**
+         * 如果要使用特殊的属性名，不能采用.的方式来操作
+         * 需要使用另一种方式
+         *       语法:对象["属性名"] = 属性值
+         *
+         * 读取时也需要采用这种方式
+         *
+         *
+         *
+         * 使用[]这种形式去操作属性，更加灵活
+         *    在[]中可以直接传递一个变量，这样变量值是多少就会读取那个属性
+         *
+         *
+         */
+        obj["hello"] = "789";
+        obj["123"] = 91011;
+        var a = 789;
+        console.log(obj["hello"]);
+        console.log(typeof obj["hello"]);
+
+        /**
+         * 属性值
+         * JS的属性值，可以是任意的数据类型
+         *         -甚至也可以是一个对象
+         */
+        obj.test = "这是一个测试";
+        console.log(obj.test);
+        console.log(typeof obj.test);
+
+        /**
+         * 创建一个对象
+         */
+        var obj2 = new Object();
+        obj2.name = "this is a test";
+        /**
+         * 将obj2设置为obj的属性
+         *
+         */
+        obj.test = obj2;
+
+        console.log(obj);
+
+        /**
+         * in运算符
+         *   -通过该运算符可以检查一个对象中是否含有指定的属性
+         *       如果有则为true
+         *       没有为false
+         *
+         *    -语法:
+         *         "属性名" in 对象
+         *
+         */
+
+        //检查obj中是否含有test属性
+        console.log("test" in obj);
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
