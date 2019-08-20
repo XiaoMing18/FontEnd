@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<!--绑定验证功能，注册事件-->
+	<head>
+		<meta charset="utf-8">
+		<title>简单列表的html结构</title>
+	</head>
+	<body>
+		<form method="post" action="">
+			账户:<input type="text" name=""/><br/><br/>
+			密码:<input type="password" name=""/><br/><br/>
+			确认:<input type="password" name=""/><br/><br/>
+			<input type="submit"  
+			value="注册"
+			 onclick="return eg.regCheck();"/>		
+		</form>
+		<script >
+			//声明一个对象,当做命名空间来使用
+			var eg =  {};
+			eg.regCheck = function(){
+				
+			}
+		</script>
+	</body>
+</html>
